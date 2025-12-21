@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura AI</title>
+    <link rel="stylesheet" href="sidepanel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <h1 class="gradient-text">Aura AI</h1>
+            </div>
+            <!-- Future: User profile or status -->
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="summary-view">Summary</button>
+            <button class="tab-btn" data-tab="chat-view">Chat</button>
+            <button class="tab-btn" data-tab="snippets-view">Snippets</button>
+            <button class="tab-btn" data-tab="settings-view">⚙️</button>
+        </nav>
+
+        <main class="content-area">
+            <!-- Summary View -->
+            <div id="summary-view" class="view active">
+                <div class="hero-section">
+                    <h2>Instant Insight</h2>
+                    <p>Get the gist of this page in seconds.</p>
+                </div>
+                <button id="summarize-btn" class="primary-btn">
+                    <span class="btn-text">Summarize Page</span>
+                    <span class="btn-shine"></span>
+                </button>
+                <div id="summary-content" class="output-card hidden">
+                    <div class="loader hidden"></div>
+                    <div class="markdown-body"></div>
+                </div>
+            </div>
+
+            <!-- Chat View -->
+            <div id="chat-view" class="view">
+                <div class="chat-container">
+                    <div id="chat-history" class="chat-history">
+                        <div class="chat-message bot">
+                            <p>Hello! Ask me anything about this page.</p>
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <textarea id="chat-input" placeholder="Ask a question..."></textarea>
+                        <button id="send-chat-btn" class="icon-btn">➤</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snippets View -->
+            <div id="snippets-view" class="view">
+                <div class="empty-state">
+                    <p>No snippets saved yet.</p>
+                    <small>Highlight text on a page and right-click to save.</small>
+                </div>
+                <ul id="snippets-list" class="snippets-list"></ul>
+            </div>
+
+            <!-- Settings View -->
+            <div id="settings-view" class="view">
+                <div class="settings-group">
+                    <label for="api-key">Gemini / OpenAI API Key</label>
+                    <input type="password" id="api-key" placeholder="sk-...">
+                    <div class="row" style="display: flex; gap: 8px;">
+                        <button id="save-settings-btn" class="secondary-btn" style="flex: 1;">Save Key</button>
+                        <button id="test-connection-btn" class="secondary-btn"
+                            style="flex: 1; background: rgba(139, 92, 246, 0.2);">Test Connection</button>
+                    </div>
+                    <p class="status-msg" id="settings-status"></p>
+                    <div id="connection-error-toast"
+                        style="display: none; background: #ef4444; color: white; padding: 8px; border-radius: 4px; margin-top: 8px; font-size: 0.85rem;">
+                    </div>
+                </div>
+
+                <div class="settings-group">
+                    <label>Debug Log</label>
+                    <div id="debug-log-console"
+                        style="background: #000; color: #0f0; padding: 10px; border-radius: 4px; height: 150px; overflow-y: auto; font-family: monospace; font-size: 0.8rem; border: 1px solid #333;">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="sidepanel.js"></script>
+</body>
+
+</html>
