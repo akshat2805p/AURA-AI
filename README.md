@@ -45,7 +45,6 @@
 1.  Click the **Aura AI** icon to open the side panel.
 2.  Navigate to the **Settings** tab (⚙️ icon).
 3.  Enter your **Google Gemini API Key**.
-    > *Don't have one? Get it for free at [Google AI Studio](https://aistudio.google.com/).*
 4.  Click **Save Key** and then **Test Connection**.
 
 <br/>
