@@ -50,12 +50,6 @@
 
 <br/>
 
-## 📸 Screenshots
-
-<div align="center">
-  <!-- Place screenshots here in future -->
-  <img src="https://placehold.co/600x400/1e1e1e/8b5cf6?text=Glassmorphism+UI+Preview&font=montserrat" alt="UI Preview" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);" />
-</div>
 
 <br/>
 
