@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=Outfit&weight=600&size=40&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&height=100&lines=Aura+AI;Smart+Page+Summarizer;Your+Intelligent+Browsing+Companion;Powered+by+Gemini+Flash" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Outfit&weight=600&size=40&duration=3000&pause=1000&color=B026FF&center=true&vCenter=true&width=600&height=100&lines=Aura+AI;Smart+Page+Summarizer;Your+Intelligent+Browsing+Companion;Powered+by+Gemini+Flash" alt="Typing SVG" />
 
 <p align="center">
     <img src="https://img.shields.io/badge/Chrome_Extension-v1.0-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Version" />
